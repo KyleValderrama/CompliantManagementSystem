@@ -9,8 +9,6 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using System.Net;
-
 
 namespace MobileApplication
 {
@@ -22,13 +20,8 @@ namespace MobileApplication
 
         public static string test;
 
-        public static string prev;
-
         protected override void OnCreate(Bundle savedInstanceState)
         {
-
-            prev = new WebClient().DownloadString("https://api.myjson.com/bins/zyntg");
-
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_main);
             // Create your application here
@@ -49,7 +42,6 @@ namespace MobileApplication
 
         private void BtnCont_Click(object sender, EventArgs e)
         {
-            
             var intent = new Intent(this, typeof(FillUpActivity));
             StartActivity(intent);
         }

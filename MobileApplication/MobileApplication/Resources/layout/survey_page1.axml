@@ -4,9 +4,10 @@
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
 	android:orientation="vertical"
-	android:layout_width="match_parent"
-	android:layout_height="match_parent"
-	android:background="#004777">
+	android:layout_height="fill_parent"
+	android:background="#590002"
+	android:layout_width="fill_parent">
+
 	<LinearLayout
 		android:orientation="horizontal"
 		android:minWidth="25px"
@@ -14,16 +15,16 @@
 		android:layout_width="match_parent"
 		android:layout_height="70dp"
 		android:id="@+id/linearLayout1"
-		android:background="#007ACC">
+		android:background="#A3080C">
 		<ImageView
-			android:src="@drawable/finallogo"
-			android:layout_width="150dp"
+			android:src="@drawable/logotext"
+			android:layout_width="100dp"
 			android:layout_height="match_parent"
 			android:id="@+id/imageView2"
 			android:layout_marginLeft="30dp" />
 	</LinearLayout>
 	<TextView
-		android:text="Please answer the following questions about your visit to the restaurant where you recieved this reciept."
+		android:text="Please answer the following questions about your visit to the KFC where you recieved this reciept."
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:id="@+id/textView1"
@@ -66,7 +67,7 @@
 			android:id="@+id/radioButton5" /> 
 	</RadioGroup>
 	<TextView
-		android:text="Please rate your overall satisfaction with your experience at this restaurant."
+		android:text="Please rate your overall satisfaction with your experience at this KFC."
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:id="@+id/textView2"

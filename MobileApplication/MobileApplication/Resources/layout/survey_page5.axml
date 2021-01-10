@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:app="http://schemas.android.com/apk/res-auto"
-	xmlns:tools="http://schemas.android.com/tools"
 	android:orientation="vertical"
 	android:layout_width="match_parent"
-	android:layout_height="match_parent"
-	android:background="#004777">
+	android:background="#590002"
+	android:layout_height="match_parent">
 	<LinearLayout
 		android:orientation="horizontal"
 		android:minWidth="25px"
@@ -14,10 +12,10 @@
 		android:layout_width="match_parent"
 		android:layout_height="70dp"
 		android:id="@+id/linearLayout1"
-		android:background="#007ACC">
+		android:background="#A3080C">
 		<ImageView
-			android:src="@drawable/finallogo"
-			android:layout_width="150dp"
+			android:src="@drawable/logotext"
+			android:layout_width="100dp"
 			android:layout_height="match_parent"
 			android:id="@+id/imageView2"
 			android:layout_marginLeft="30dp" />
@@ -48,7 +46,7 @@
 			android:layout_marginRight="50dp" />
 
 			<TextView
-				android:text="Return to this restaurant in the next 30 days?"
+				android:text="Return to this KFC in the next 30 days?"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:id="@+id/textView2"
@@ -94,7 +92,7 @@
 
 
 			<TextView
-				android:text="Recommend this restaurant to the others in the next 30 days?"
+				android:text="Recommend this KFC to the others in the next 30 days?"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:id="@+id/textView2"

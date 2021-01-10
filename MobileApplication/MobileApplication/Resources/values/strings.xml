@@ -33,35 +33,25 @@
     <string name="income_prompt">Choose a planet</string>
     <string-array name="income">
       <item>-Select One-</item>
-      <item>Under PHP170,000</item>
-      <item>PHP170,000 to PHP250,000</item>
-      <item>PHP250,000 to PHP500,000</item>
-      <item>PHP500,000 to PHP1,000,000</item>
-      <item>PHP1,000,000 to PHP1,500,000</item>
-      <item>PHP1,500,000 or more</item>
+      <item>Under $25,000</item>
+      <item>$25,000 to $44,000</item>
+      <item>$45,000 to $59,000</item>
+      <item>$60,000 to $74,000</item>
+      <item>$75,000 to $99,000</item>
+      <item>$100,000 or more</item>
       <item>Prefer not to answer</item> 
     </string-array>
   
     <string name="backg_prompt">Choose a planet</string>
     <string-array name="backg">
       <item>-Select One-</item>
-      <item>NCR</item>
-      <item>Region I</item>
-      <item>CAR</item>
-      <item>Region II</item>
-      <item>Region III</item>
-      <item>Region IV-A</item>
-      <item>MIMAROPA Region</item>
-      <item>Region V</item>
-      <item>Region VI</item>
-      <item>Region VII</item>
-      <item>Region VIII</item>
-      <item>Region IX</item>
-      <item>Region X</item>
-      <item>Region XI</item>
-      <item>Region XII</item>
-      <item>Region XIII</item>
-      <item>ARMM</item>
+      <item>American Indian or Alaskan Native</item>
+      <item>Asian</item>
+      <item>Black or African American</item>
+      <item>Hispanic or Latino</item>
+      <item>Native Hawaiian or Pacific Islander</item>
+      <item>White or Caucasian</item>
+      <item>Other</item>
       <item>Prefer not to answer</item> 
     </string-array>
   

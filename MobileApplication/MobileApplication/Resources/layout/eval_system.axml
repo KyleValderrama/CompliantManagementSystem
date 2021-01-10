@@ -5,7 +5,7 @@
 	xmlns:tools="http://schemas.android.com/tools"
 	android:orientation="vertical"
 	android:layout_height="fill_parent"
-	android:background="#007ACC"
+	android:background="#590002"
 	android:layout_width="fill_parent">
 	<TextView
 		android:text="asdfasdft"
@@ -14,24 +14,27 @@
 		android:minWidth="25px"
 		android:minHeight="25px"
 		android:gravity="center"
-		android:textSize="40dp"
+		android:textSize="40sp"
 		android:id="@+id/textView1"
 		android:layout_marginTop="100dp"
 		android:layout_marginLeft="30dp"
 		android:layout_marginRight="30dp" />
 	<ImageView
-		android:src="@drawable/finallogo"
+		android:src="@drawable/logotext"
 		android:layout_width="fill_parent"
 		android:gravity="center"
-		android:layout_marginTop="20dp"
-		android:layout_height="100dp"
+		android:layout_height="50dp"
 		android:id="@+id/imageView1" />
-	<com.felipecsl.gifimageview.library.GifImageView
+	<Button
+		android:text="Start"
 		android:layout_width="match_parent"
-		android:layout_height="90dp"
-		android:id="@+id/gifImageView1"
-		android:layout_marginTop="40dp" />
-
+		android:layout_height="wrap_content"
+		android:id="@+id/button1"
+		android:layout_marginTop="30dp"
+		android:layout_marginLeft="100dp"
+		android:layout_marginRight="100dp"
+		android:background="@drawable/buttons"
+		/>
 
 	
 

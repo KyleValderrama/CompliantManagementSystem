@@ -13,20 +13,19 @@
 		android:layout_width="fill_parent"
 		android:layout_height="fill_parent"
 		android:id="@+id/linearLayout1"
-		android:background="#004777"
+		android:background="#590002"
 		>
 		<ImageView
-			android:src="@drawable/finallogo"
+			android:src="@drawable/kfclogo"
 			android:layout_width="match_parent"
-			android:layout_height="130dp"
+			android:layout_height="150dp"
 			android:id="@+id/imageView1"
 			android:layout_marginTop="100dp" />
 		<TextView
-			android:text="Welcome to the Comlaint Management Survey! We value your candid feedback and appreciate you taking the time to complete our survey."
+			android:text="Welcome to the KFC Customer Satisfaction Survey! We value your candid feedback and appreciate you taking the time to complete our survey."
 			android:textStyle="bold"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:gravity="center"
 			android:id="@+id/textView1"
 			android:layout_marginTop="30dp"
 			android:layout_marginLeft="30dp"

@@ -14,16 +14,16 @@
 		android:layout_width="fill_parent"
 		android:layout_height="fill_parent"
 		android:id="@+id/linearLayout1"
-		android:background="#004777"
+		android:background="#590002"
 		>
 		<ImageView
-			android:src="@drawable/finallogo"
+			android:src="@drawable/kfclogo"
 			android:layout_width="match_parent"
-			android:layout_height="130dp"
+			android:layout_height="150dp"
 			android:id="@+id/imageView1"
 			android:layout_marginTop="100dp" />
 		<TextView
-			android:text="Thank you for participating the survey! We always appreciate your feedbacks and requests."
+			android:text="Thank you for participating the survey! We always appreciate your feedbacks and requests We are committed to giving our customers a Finger Lickin’ Good experience every time they visit our restaurants."
 			android:gravity="center"
 			android:textStyle="bold"
 			android:layout_width="match_parent"
@@ -42,15 +42,6 @@
 			android:layout_marginRight="100dp"
 			android:background="@drawable/buttons"
 		/>
-		<Button
-			android:text="Exit"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:id="@+id/btnQuit"
-			android:layout_marginTop="10dp"
-			android:layout_marginLeft="100dp"
-			android:layout_marginRight="100dp"
-			android:background="@drawable/buttons"/>
 	</LinearLayout>
 
 </RelativeLayout>

@@ -15,15 +15,14 @@ using Newtonsoft.Json;
 using System.Net;
 using Plugin.Messaging;
 using System.Net.Mail;
-using System.Net.Mime;
 
 namespace MobileApplication
 {
-    [Activity(Label = "FinishActivity", Theme = "@style/Theme.Design.NoActionBar" )]
+    [Activity(Label = "FinishActivity", Theme = "@style/Theme.Design.NoActionBar", MainLauncher =true)]
     public class FinishActivity : Activity
     {
         public Button btnExit;
-        public Button btnQuit;
+        private string messageToSend;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -39,7 +38,6 @@ namespace MobileApplication
         private void FindViews()
         {
             btnExit = FindViewById<Button>(Resource.Id.btnFinish);
-            btnQuit = FindViewById<Button>(Resource.Id.btnQuit);
         }
 
         private void HandleEvents()
@@ -82,33 +80,6 @@ namespace MobileApplication
                 background = Survey10Activity.survey10q5
             };
 
-            btnQuit.Click += delegate
-            {
-                if (btnExit.Enabled == true)
-                {
-                    AlertDialog.Builder dialog = new AlertDialog.Builder(this);
-                    AlertDialog alert = dialog.Create();
-                    alert.SetTitle("Exit");
-                    alert.SetMessage("Are you sure you want to exit without submitting?");
-                    alert.SetButton2("No", (c, ev) =>
-                    {
-                        alert.Hide();
-                    });
-                    alert.SetButton("Yes", (c, ev) =>
-                    {
-                        var activity = (Activity)this;
-                        activity.FinishAffinity(); 
-                    });
-                    
-                    alert.Show();
-                }
-                else
-                {
-                    var activity = (Activity)this;
-                    activity.FinishAffinity();
-                }
-            };
-
 
             btnExit.Click += async delegate
             {
@@ -125,94 +96,63 @@ namespace MobileApplication
                     {
                         alert.Hide();
                     });
-
                     alert.Show();
                 }
                 else
                 {
-                  
+
+                    
                     btnExit.Enabled = false;
                     HttpClient client = new HttpClient();
-                    string url = "https://api.myjson.com/bins/zyntg";
+                    string url = "https://jsonblob.com/api/jsonBlob/7367dcc3-c852-11e8-8a99-ad6b1022dc2b";
                     var uri = new Uri(url);
+
                     HttpResponseMessage response;
                     client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
                     var json = JsonConvert.SerializeObject(sub);
-                    JArray array = JArray.Parse(Main.prev);
+
+                    JArray array = JArray.Parse(EvalSystemActivity.prev);
                     JObject obj = JObject.Parse(json);
                     array.Add(new JObject(obj));
+
                     var merge = JsonConvert.SerializeObject(array);
-                    //Main.test = merge;
+
+
+                    Main.test = merge;
+
                     var content = new StringContent(merge, Encoding.UTF8, "application/json");
                     response = await client.PutAsync(uri, content);
 
+                    /*
+
                     try
                     {
-
-
-                        //Email Sending-------------------------------------------->
-                        SmtpClient sclient = new SmtpClient("smtp.gmail.com", 587);
+                        Toast.MakeText(this, "yes!", ToastLength.Short).Show();
+                        messageToSend = "shit!";
+                        SmtpClient sclient = new SmtpClient("smtp.gmail.com", 456);
                         MailMessage message = new MailMessage();
-                        message.From = new MailAddress("CompliantSender@gmail.com"); //Who it's from
-                        message.To.Add("CompliantReceiver@gmail.com"); // The E-Mail that recieves the message
-                        message.IsBodyHtml = true;
-                        message.Subject = "New Compliant Submission";
-                        message.Body = "Reciept Nummber: <b>" + sub.id +
-                        "</b><br>Time: <b>" + sub.date +
-                        "</b><br><br><b>Answers</b><br>-------------------------------<br>Survey 1: <b>" + sub.survey1 +
-                        "</b><br>Survey 2: <b>" + sub.survey2 +
-                        "</b><br>Survey 3<br>&nbsp; > Question 1: <b>" + sub.survey3[0] +
-                        "</b><br>&nbsp; > Question 2: <b>" + sub.survey3[1] +
-                        "</b><br>&nbsp; > Question 3: <b>" + sub.survey3[2] +
-                        "</b><br>&nbsp; > Question 4: <b>" + sub.survey3[3] +
-                        "</b><br>&nbsp; > Question 5: <b>" + sub.survey3[4] +
-                        "</b><br>&nbsp; > Question 6: <b>" + sub.survey3[5] +
-                        "</b><br>Survey 4: <b>" + sub.survey4 +
-                        "</b><br>Survey 5<br>&nbsp; > Question 1: <b>" + sub.survey5[0] +
-                        "</b><br>&nbsp; > Question 2: <b>" + sub.survey5[1] +
-                        "</b><br>Survey 6: <b>" + sub.survey6 +
-                        "</b><br>Survey 7<br>&nbsp; > Question 1: <b>" + sub.survey7[0] +
-                        "</b><br>&nbsp; > Question 2: <b>" + sub.survey7[1] +
-                        "</b><br>&nbsp; > Question 3: <b>" + sub.survey7[2] +
-                        "</b><br>Survey 8: <b>" + string.Join(", ", sub.survey8) +
-                        "</b><br>Survey 9: <b>" + sub.survey9 +
-                        "</b><br>Survey 10<br>&nbsp; > Question 1: <b>" + Survey10Activity.survey10q1 +
-                        "</b><br>&nbsp; > Question 2: <b>" + Survey10Activity.survey10q2 +
-                        "</b><br>&nbsp; > Question 3: <b>" + Survey10Activity.survey10q3 +
-                        "</b><br>&nbsp; > Question 4: <b>" + Survey10Activity.survey10q4 +
-                        "</b><br>&nbsp; > Question 5: <b>" + Survey10Activity.survey10q5 +
-                        "</b><br>-------------------------------<br>";
+                        message.From = new MailAddress("raker.jobert@gmail.com"); //Who it's from
+                        message.To.Add("valderrama.kyle@gmail.com"); // The E-Mail that recieves the message
+                        message.Subject = "Replay from PC";
+                        message.Body = messageToSend;
                         sclient.EnableSsl = true;
                         sclient.UseDefaultCredentials = false;
-                        sclient.DeliveryMethod = SmtpDeliveryMethod.Network;
-                        sclient.Credentials = new NetworkCredential("CompliantSender@gmail.com", "5pOGXzC9TM");
+                        sclient.Credentials = new NetworkCredential("Hazhard Waryeah", "Astigako1234");
                         sclient.Send(message);
-
-                        AlertDialog.Builder dialog = new AlertDialog.Builder(this);
-                        AlertDialog alert = dialog.Create();
-                        alert.SetTitle("Success!");
-                        alert.SetMessage("Thank you for participating the survey!");
-                        alert.SetButton("OK", (c, ev) =>
-                        {
-                            alert.Hide();
-                        });
-                        alert.Show();
                     }
                     catch
                     {
-                        Toast.MakeText(this, "Error!", ToastLength.Short).Show();
+                        Toast.MakeText(this, "error!", ToastLength.Short).Show();
                     }
-                    
-                    
+                    */
 
 
 
 
 
 
-
-
-                    
+                    // var activity = (Activity)this;
+                    // activity.FinishAffinity();
                 }
             };
 
