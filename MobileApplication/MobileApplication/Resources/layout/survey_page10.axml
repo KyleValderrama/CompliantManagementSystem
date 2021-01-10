@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#004777">
+	<LinearLayout
+		android:orientation="horizontal"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="70dp"
+		android:id="@+id/linearLayout1"
+		android:background="#007ACC">
+		<ImageView
+			android:src="@drawable/finallogo"
+			android:layout_width="150dp"
+			android:layout_height="match_parent"
+			android:id="@+id/imageView2"
+			android:layout_marginLeft="30dp" />
+	</LinearLayout>
+	<TextView
+		android:text="These final questions are for classification purposes only."
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/textView1"
+		android:layout_marginTop="30dp"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp" />
+	<TextView
+		android:text="Please indicate your gender"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/textView2"
+		android:layout_marginTop="20dp"
+		android:layout_marginRight="50dp"
+		android:layout_marginStart="50dp" />
+	<Spinner
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:prompt="@string/gender_prompt"
+		android:id="@+id/spinner"
+		android:layout_marginLeft="50dp"
+		android:layout_marginRight="50dp" />
+	<TextView
+		android:text="Please indicate your age"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/textView2"
+		android:layout_marginTop="20dp"
+		android:layout_marginRight="50dp"
+		android:layout_marginStart="50dp" />
+	<Spinner
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:prompt="@string/age_prompt"
+		android:id="@+id/spinner2"
+		android:layout_marginLeft="50dp"
+		android:layout_marginRight="50dp" />
+	<TextView
+		android:text="Are there a children under the age of 18 living in your household?"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/textView2"
+		android:layout_marginTop="20dp"
+		android:layout_marginRight="50dp"
+		android:layout_marginStart="50dp" />
+	<Spinner
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:prompt="@string/und18_prompt"
+		android:id="@+id/spinner3"
+		android:layout_marginLeft="50dp"
+		android:layout_marginRight="50dp" />
+	<TextView
+		android:text="Please indicate your annual household income"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/textView2"
+		android:layout_marginTop="20dp"
+		android:layout_marginRight="50dp"
+		android:layout_marginStart="50dp" />
+	<Spinner
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:prompt="@string/income_prompt"
+		android:id="@+id/spinner4"
+		android:layout_marginLeft="50dp"
+		android:layout_marginRight="50dp" />
+	<TextView
+		android:text="Please indicate which of the following best describes your region"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/textView2"
+		android:layout_marginTop="20dp"
+		android:layout_marginRight="50dp"
+		android:layout_marginStart="50dp" />
+	<Spinner
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:prompt="@string/backg_prompt"
+		android:id="@+id/spinner5"
+		android:layout_marginLeft="50dp"
+		android:layout_marginRight="50dp" />
+
+	<Button
+		android:text="Continue"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/button1"
+		android:layout_marginTop="20dp"
+		android:background="@drawable/buttons"
+		android:layout_marginLeft="100dp"
+		android:layout_marginRight="100dp" />
+
+	
+</LinearLayout>

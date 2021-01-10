@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+	<LinearLayout
+		android:orientation="vertical"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:id="@+id/linearLayout1"
+		android:background="#004777"
+		>
+		<ImageView
+			android:src="@drawable/finallogo"
+			android:layout_width="match_parent"
+			android:layout_height="130dp"
+			android:id="@+id/imageView1"
+			android:layout_marginTop="100dp" />
+		<TextView
+			android:text="Welcome to the Comlaint Management Survey! We value your candid feedback and appreciate you taking the time to complete our survey."
+			android:textStyle="bold"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:id="@+id/textView1"
+			android:layout_marginTop="30dp"
+			android:layout_marginLeft="30dp"
+			android:layout_marginRight="30dp" />
+		<Button
+			android:text="CONTINUE"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/btnContinue"
+			android:layout_marginTop="30dp"
+			android:layout_marginLeft="100dp"
+			android:layout_marginRight="100dp"
+			android:background="@drawable/buttons"
+		/>
+	</LinearLayout>
+
+</RelativeLayout>
