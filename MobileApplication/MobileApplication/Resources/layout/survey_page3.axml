@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:background="#590002"
+	android:layout_height="match_parent">
+	<LinearLayout
+		android:orientation="horizontal"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="70dp"
+		android:id="@+id/linearLayout1"
+		android:background="#A3080C">
+		<ImageView
+			android:src="@drawable/logotext"
+			android:layout_width="100dp"
+			android:layout_height="match_parent"
+			android:id="@+id/imageView2"
+			android:layout_marginLeft="30dp" />
+	</LinearLayout>
+	
+	<ScrollView	
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="fill_parent"
+		android:id="@+id/scrollView1">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:id="@+id/linearLayout2">
+
+			<TextView
+			android:text="Please rate your satisfaction with..."
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/textView1"
+			android:layout_marginTop="10dp"
+			android:layout_marginLeft="50dp"
+			android:layout_marginRight="50dp" />
+
+			<TextView
+				android:text="The taste of your food."
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/textView2"
+				android:layout_marginLeft="50dp"
+				android:layout_marginRight="50dp"
+				android:layout_marginTop="20dp"
+				android:layout_marginBottom="20dp" />
+			<RadioGroup
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/radioGroup1"
+				android:layout_marginLeft="60dp"
+				android:layout_marginBottom="30dp"
+				android:layout_marginRight="60dp">
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Highly Satisfied"
+					android:id="@+id/radioButton1" />
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Satisfied"
+					android:id="@+id/radioButton2" />
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Neither Satisfied nor Dissatisfied"
+					android:id="@+id/radioButton3" />
+				<RadioButton
+					android:text="Dissatisfied"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/radioButton5" />
+				<RadioButton
+					android:text="Highly Dissatisfied"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/radioButton4" />
+			</RadioGroup>
+
+			<TextView
+				android:text="The friendliness of the team members."
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/textView2"
+				android:layout_marginLeft="50dp"
+				android:layout_marginRight="50dp"
+				android:layout_marginTop="20dp"
+				android:layout_marginBottom="20dp" />
+			<RadioGroup
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/radioGroup2"
+				android:layout_marginLeft="60dp"
+				android:layout_marginBottom="30dp"
+				android:layout_marginRight="60dp">
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Highly Satisfied"
+					android:id="@+id/radioButton1" />
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Satisfied"
+					android:id="@+id/radioButton2" />
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Neither Satisfied nor Dissatisfied"
+					android:id="@+id/radioButton3" />
+				<RadioButton
+					android:text="Dissatisfied"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/radioButton5" />
+				<RadioButton
+					android:text="Highly Dissatisfied"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/radioButton4" />
+			</RadioGroup>
+
+			<TextView
+				android:text="The Speed of speed."
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/textView2"
+				android:layout_marginLeft="50dp"
+				android:layout_marginRight="50dp"
+				android:layout_marginTop="20dp"
+				android:layout_marginBottom="20dp" />
+			<RadioGroup
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/radioGroup3"
+				android:layout_marginLeft="60dp"
+				android:layout_marginBottom="30dp"
+				android:layout_marginRight="60dp">
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Highly Satisfied"
+					android:id="@+id/radioButton1" />
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Satisfied"
+					android:id="@+id/radioButton2" />
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Neither Satisfied nor Dissatisfied"
+					android:id="@+id/radioButton3" />
+				<RadioButton
+					android:text="Dissatisfied"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/radioButton5" />
+				<RadioButton
+					android:text="Highly Dissatisfied"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/radioButton4" />
+			</RadioGroup>
+
+			<TextView
+				android:text="The accuracy of your order."
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/textView2"
+				android:layout_marginLeft="50dp"
+				android:layout_marginRight="50dp"
+				android:layout_marginTop="20dp"
+				android:layout_marginBottom="20dp" />
+			<RadioGroup
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/radioGroup4"
+				android:layout_marginBottom="30dp"
+				android:layout_marginLeft="60dp"
+				android:layout_marginRight="60dp">
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Highly Satisfied"
+					android:id="@+id/radioButton1" />
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Satisfied"
+					android:id="@+id/radioButton2" />
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Neither Satisfied nor Dissatisfied"
+					android:id="@+id/radioButton3" />
+				<RadioButton
+					android:text="Dissatisfied"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/radioButton5" />
+				<RadioButton
+					android:text="Highly Dissatisfied"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/radioButton4" />
+			</RadioGroup>
+
+			<TextView
+				android:text="The overall cleanliness of the restaurant"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/textView2"
+				android:layout_marginLeft="50dp"
+				android:layout_marginRight="50dp"
+				android:layout_marginTop="20dp"
+				android:layout_marginBottom="20dp" />
+			<RadioGroup
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/radioGroup5"
+				android:layout_marginLeft="60dp"
+				android:layout_marginBottom="30dp"
+				android:layout_marginRight="60dp">
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Highly Satisfied"
+					android:id="@+id/radioButton1" />
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Satisfied"
+					android:id="@+id/radioButton2" />
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Neither Satisfied nor Dissatisfied"
+					android:id="@+id/radioButton3" />
+				<RadioButton
+					android:text="Dissatisfied"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/radioButton5" />
+				<RadioButton
+					android:text="Highly Dissatisfied"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/radioButton4" />
+			</RadioGroup>
+
+			<TextView
+				android:text="The overall value for the price you paid."
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/textView2"
+				android:layout_marginLeft="50dp"
+				android:layout_marginRight="50dp"
+				android:layout_marginTop="20dp"
+				android:layout_marginBottom="20dp" />
+			<RadioGroup
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/radioGroup6"
+				android:layout_marginBottom="30dp"
+				android:layout_marginLeft="60dp"
+				android:layout_marginRight="60dp">
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Highly Satisfied"
+					android:id="@+id/radioButton1" />
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Satisfied"
+					android:id="@+id/radioButton2" />
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Neither Satisfied nor Dissatisfied"
+					android:id="@+id/radioButton3" />
+				<RadioButton
+					android:text="Dissatisfied"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/radioButton5" />
+				<RadioButton
+					android:text="Highly Dissatisfied"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/radioButton4" />
+			</RadioGroup>
+
+			<Button
+			android:text="Next"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/button1"
+			android:layout_marginTop="20dp"
+			android:layout_marginBottom="100dp"
+			android:background="@drawable/buttons"
+			android:layout_marginLeft="100dp"
+			android:layout_marginRight="100dp" />
+
+		</LinearLayout>
+
+	</ScrollView>
+	
+
+
+
+</LinearLayout>

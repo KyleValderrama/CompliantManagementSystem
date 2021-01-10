@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:background="#590002"
+	android:layout_height="match_parent">
+	<LinearLayout
+		android:orientation="horizontal"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="70dp"
+		android:id="@+id/linearLayout1"
+		android:background="#A3080C">
+		<ImageView
+			android:src="@drawable/logotext"
+			android:layout_width="100dp"
+			android:layout_height="match_parent"
+			android:id="@+id/imageView2"
+			android:layout_marginLeft="30dp" />
+	</LinearLayout>
+	<TextView
+		android:text="Would you like to recognize a team member for going above and beyond to provide you with outstanding service?"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/textView1"
+		android:layout_marginTop="50dp"
+		android:layout_marginLeft="60dp"
+		android:layout_marginRight="60dp" />
+	<RadioGroup
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/radioGroup1"
+		android:layout_marginRight="150dp"
+		android:layout_marginLeft="150dp"
+		android:layout_marginVertical="30dp">
+		<RadioButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Yes"
+			android:id="@+id/radioButton1" />
+		<RadioButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="No"
+			android:id="@+id/radioButton2" />
+	</RadioGroup>
+
+	<Button
+		android:text="Next"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/button1"
+		android:layout_marginTop="20dp"
+		android:background="@drawable/buttons"
+		android:layout_marginLeft="100dp"
+		android:layout_marginRight="100dp" />
+
+</LinearLayout>
+
